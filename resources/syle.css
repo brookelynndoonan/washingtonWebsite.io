@@ -1,0 +1,474 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* DESKTOP NAV */
+nav {
+      /* background-image: linear-gradient(to bottom right, #30663B , #6DA81D); */
+      height: 90px;
+      background-color: #C9FFC6;
+      border-bottom: .5px solid #9BB870;
+      box-shadow: 0 16px 16px 0 rgba(0,0,0,0.4), 0 12px 40px 0 rgba(0,0,0,0.19); 
+  }
+  
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      box-shadow: width:100%;height:100%; box-shadow: 0 0 10px 0 #5D5E5D inset;
+      /* https://stackoverflow.com/questions/49653136/css-glassy-slightly-folded-borders-3d-effect */
+
+    }
+  
+    nav .navbar {
+      justify-content: space-between;
+    }
+  
+    .navbar ul {
+      display: flex;
+      width: 97%;
+    }
+  
+    .navbar ul li {
+      list-style-type: none;
+      margin-right: 24px;
+      width: 25%;
+      
+    }
+    .navButton {
+       background: rgba(234, 161, 30, 0.14);
+       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+       border: 1px solid rgba(234, 161, 30, 0.36);
+       padding: 15px;
+       width: 85%;
+       transition-duration: 0.4s;
+       font-size: 23px;
+       font-family: Helvetica, sans-serif; 
+       color: #F4C223;
+       border-radius: 4px;
+       text-shadow: 1px 1px 2px gray;
+    }
+      
+    .navButton:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+         /* I got this box-shadow hover and transition hover from: https://www.w3schools.com/css/css3_buttons.asp */
+        background-image: linear-gradient(to bottom right, #EEC130, #EAEA28);
+        color: #E0F7DE;
+        border-bottom: 3px solid #5C490E;
+        border-right: 3px solid #5C490E;
+        box-shadow: width:100%;height:100%;box-shadow: 0 0 5px white inset;
+        /* https://stackoverflow.com/questions/49653136/css-glassy-slightly-folded-borders-3d-effect */
+      }
+  
+  
+     nav .navbar .apple-logo{
+      display: inline;
+      float: left;
+      width: 8%;
+      height: 90%;
+      background:none;
+    }
+  
+    .title strong {
+      font-family: Helvetica, sans serif;
+      color: #4a4a4a;
+      font-weight: bold;
+      font-size: 32px;
+    }
+  
+    .title span {
+      font-family: Helvetica, sans-serif;
+      color: #9b9b9b;
+      font-size: 32px;
+    }
+    
+  
+  /* MOBILE NAV */
+/*   
+  @media only screen and (min-width: 770px) {
+  
+    .mobile-nav .mobile-links {
+        display: none;
+    }
+  }
+   */
+  /*  NAV BAR FONT GRADUAL SMOOTH TRANSITION */ 
+  
+  /* @media only screen and (min-width: 770px) and (max-width: 796px) {
+    .navbar a {
+      font-size: 12px;
+    }
+  }
+  @media only screen and (min-width: 796px) and (max-width: 831px) {
+    .navbar a { 
+      font-size: 14px;
+    }
+  }
+  @media only screen and (min-width: 831px) and (max-width: 960px) {
+    .navbar a {
+      font-size: 16px;
+    }
+  }
+  
+  /* NAV MOBILE VERSION SETUP */ 
+  /*
+  @media only screen and (min-width: 200px) and (max-width: 770px) {
+    .navbar {
+        display: none;
+    }
+  
+    .mobile-nav {
+        display: flex;
+        flex-direction: column;
+        height: 10px;
+    }
+  
+    .mobile-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: -45px;
+    }
+    
+    .mobile-links img {
+      height: 150%;
+      width: 150%;
+    }
+  } */
+
+
+
+
+  /* Main Body Content */
+  body {
+    background-color: #A0D39D;
+    width: 100%;
+  }
+
+  /* Header HomePage */
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 97%;
+    margin-top: 25px;
+    margin-left: 25px;
+    background-color: white;
+    background-color: rgba(255,255,255,0.7);
+ 
+  }
+  .mtRainierContainer {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 40%;
+    height: 50%;
+    justify-content: center; 
+    position: float;
+  }
+
+  .mtRainierContainer p {
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    color: black;
+    text-align: left;
+    margin-top: -3px;
+  }
+
+  .mtRainierContainer img {
+    height: 100%;
+    width: 100%;
+    border: 10px solid white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    /* I got this box-shadow hover and transition hover from: https://www.w3schools.com/css/css3_buttons.asp */
+    
+  }
+  
+  .rowContainer { 
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .heading-titleContainer {
+    margin-left: 40px;
+    position: float;
+    width: 90%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+    margin-bottom: -20px;
+  }
+  
+  .heading-titleContainer h1 {
+    font-size: 50px;
+    font-family: Helvetica, sans-serif;
+    color: #1b7760;
+    text-shadow: 1px 2px 4px gray;
+  }
+
+  .introductoryParagraph {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+    margin-left: 40px;
+    background-color: rgba(255,255,255,0.6);
+    margin-bottom: 20px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    /* I got this box-shadow hover and transition hover from: https://www.w3schools.com/css/css3_buttons.asp */
+  }
+
+  .introductoryParagraph p {
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+    color: #607C5F;
+    text-align: center;
+  }
+
+  .washingtonStateFlag{
+    width: 90%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+    margin-left: 40px;
+  }
+
+  .washingtonStateFlag img {
+    border: 5px solid white;
+    margin-bottom: 10px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    /* I got this box-shadow hover and transition hover from: https://www.w3schools.com/css/css3_buttons.asp */
+  }
+
+  .washingtonStateFlagTitle {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+    margin-left: 40px;
+  }
+  .washingtonStateFlagTitle p {
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    color: black;
+    text-align: left;
+    margin-top: -3px;
+  }
+
+  /* Main Section */
+
+  .mainAndAside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 97%;
+    margin-top: 25px;
+    margin-left: 25px;
+    justify-content: space-between;
+    
+  }
+
+  .tableContent {
+    margin-top: 35px;
+    position: float;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;  */
+  }
+  .stateSymbols .stateSymbolTable {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    /* I got this box-shadow hover and transition hover from: https://www.w3schools.com/css/css3_buttons.asp */
+    
+  }
+  
+  .stateSymbolTable {
+    background-color: white;
+    width: 100%;
+  }
+
+  .stateSymbolTable th {
+    background-color: #7AC277;
+    font-size: 24px;
+    font-family: Helvetica, sans-serif;
+    color: #223F20;
+    padding: 15px;
+    border: 2px solid black;
+  }
+  .stateSymbolTable td {
+    background-color: white;
+    font-size: 24px;
+    font-family: Helvetica, sans-serif;
+    border: 2px solid black;
+    text-align: center;
+  }
+  .stateSymbols #tdPhotos {
+    width: 30%;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    color: #223F20;
+    text-align: center;
+  }
+
+  #tdPhotos img {
+    border: 4px solid black;
+    height: 95%;
+    width: 95%;
+    margin-top: 5px;
+  }
+
+  .stateSymbolTable #tfooter {
+    background-color: #7AC277;
+    font-size: 24px;
+    font-family: Helvetica, sans-serif;
+    color: #223F20;
+    text-align: center;
+    padding: 15px;
+  }
+
+
+  /* Aside Code */
+
+  aside {
+    /* margin-top: 35px; */
+    position: float;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    min-height: 100%;
+
+  }
+
+  aside .asideContainer {
+    width: 100%;
+    height: 100%;
+    border: 6px solid white;
+    background-color: #7AC277;
+    overflow: hidden;
+    min-height: 100%;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    /* I got this box-shadow hover and transition hover from: https://www.w3schools.com/css/css3_buttons.asp */
+    
+    
+  }
+  
+   .asideContainer ul {
+    padding: 10px 10px 10px 40px;
+    line-height: 1.8;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .asideContainer li::marker {
+    color: #2F5E63;
+  }
+
+  .asideContainer li a {
+    font-size: 24px;
+    font-family: Helvetica, sans-serif;
+    color: #223F20;
+    font-weight: 400;
+    text-decoration: underline dotted;
+    /* background-color: #9ADDC3; */
+    background-color: rgba(255,255,255,0.2);
+  }
+
+  .asideContainer h2 {
+    padding: 20px;
+    border: 2px solid #A2B1A1;
+    background-color: rgba(255,255,255,0.6);
+    margin: 20px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    /* I got this box-shadow hover and transition hover from: https://www.w3schools.com/css/css3_buttons.asp */
+  }
+
+  .mainContent {
+    position: float;
+    margin: 60px 30px 35px 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+  }
+
+  .factsOfWashington {
+    padding: 25px;
+    width: 95%;
+    height: 100%;
+    border: 4px solid black;
+    background-color: #7AC277;
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+    color: #254930;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    /* I got this box-shadow hover and transition hover from: https://www.w3schools.com/css/css3_buttons.asp */
+  }
+
+  .factsOfWashington h2 {
+    text-align: center;
+  }
+
+  .sourcesContainer {
+    position: float;
+    margin: 60px 30px 35px 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+  }
+
+  .sourcesContent {
+    padding: 25px;
+    width: 95%;
+    height: 100%;
+    border: 4px solid black;
+    background-color: white;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    /* I got this box-shadow hover and transition hover from: https://www.w3schools.com/css/css3_buttons.asp */
+  }
+
+  .sourcesContent h2 {
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  .sourcesContent a {
+    color: black;
+  }
+
