@@ -90,3 +90,319 @@ nav {
       color: #9b9b9b;
       font-size: 32px;
     }
+
+    body {
+      background-color: #A0D39D;
+      width: 100%;
+    }
+
+    /* Header Content */
+    header {
+     
+      width: 98%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .containerForHeaders {
+      padding: 20px 45px 20px 0;
+      border: 2px solid black;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      background-color: rgba(255,255,255,0.4);
+      margin-top: 35px;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      /* I got this box-shadow hover and transition hover from: https://www.w3schools.com/css/css3_buttons.asp */
+    }
+    header .headerTitles {
+      margin-left: 45px;
+      position: float;
+      width: 90%;
+      height: 50%;
+      display: flex;
+      flex-direction: row;
+      align-items: center; 
+      justify-content: center;
+      margin-bottom: -20px;
+    }
+
+    header .headerSubTitle {
+      margin-left: 40px;
+      position: float;
+      width: 90%;
+      height: 50%;
+      display: flex;
+      flex-direction: row;
+      align-items: center; 
+      justify-content: center;
+      margin-bottom: -20px;
+    }
+
+    .headerTitles {
+      font-size: 25px;
+      text-align: center;
+      color: #31583E;
+    }
+
+    .headerSubTitle {
+      margin-top: -40px;
+      font-size: 24px;
+      text-align: center;
+      color: #31583E;
+      padding-bottom: 20px;
+    }
+
+    .topContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 97%;
+      margin-top: 25px;
+      margin-left: 25px;
+      justify-content: space-evenly;
+    }
+
+    aside {
+      margin-top: 35px;
+      margin-right: 60px;
+      position: float;
+      width: 35%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center;
+    }
+  
+    aside .sideBar {
+      width: 100%;
+      height: 100%;
+      border: 6px solid white;
+      background-color: #7AC277;
+      overflow: hidden;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      I got this box-shadow hover and transition hover from: https://www.w3schools.com/css/css3_buttons.asp
+    }
+    
+     .sideBar ul {
+      padding: 10px 10px 10px 40px;
+      line-height:  2.5;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  
+    .sideBar li::marker {
+      color: #2F5E63;
+    }
+  
+    .sideBar li a {
+      font-size: 24px;
+      font-family: Helvetica, sans-serif;
+      color: #223F20;
+      font-weight: 400;
+      text-decoration: underline dotted;
+      /* background-color: #9ADDC3; */
+      background-color: rgba(255,255,255,0.2);
+    }
+  
+    .sideBar h2 {
+      padding: 20px;
+      border: 2px solid #A2B1A1;
+      background-color: rgba(255,255,255,0.6);
+      margin: 20px;
+      padding-left: 10px;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      /* I got this box-shadow hover and transition hover from: https://www.w3schools.com/css/css3_buttons.asp */
+    }
+
+    .introParagraphContainer {
+      margin-top: 35px;
+      position: float;
+      width: 30%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center;
+    }
+
+    .introParagraphContainer .introParagraph {
+      width: 100%;
+      height: 100%;
+      border: 6px solid #7AC277;
+      background-color: white;
+      overflow: hidden;
+      min-height: 100%;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      /* I got this box-shadow hover and transition hover from: https://www.w3schools.com/css/css3_buttons.asp */
+      padding-bottom: 50px;
+    }
+
+    .introParagraph p {
+      padding: 20px 20px 50px 20px;
+      font-size: 22px;
+      font-family: Helvetica, sans-serif;
+      color: #223F20;
+      text-align: center;
+      margin-top: -45px;
+      margin-left: 10px;
+      position: float;
+      width: 100%;
+      height: 50%;
+      display: flex;
+      flex-direction: row;
+      align-items: center; 
+      justify-content: center;
+    }
+
+    .introParagraph .introPhoto {
+      margin-left: 10px;
+      position: float;
+      width: 100%;
+      height: 50%;
+      display: flex;
+      flex-direction: row;
+      align-items: center; 
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+    
+    .introPhoto img {
+      border: 4px solid black;
+      box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24), 0 8px 8px 0 rgba(0,0,0,0.19);
+      I got this box-shadow hover and transition hover from: https://www.w3schools.com/css/css3_buttons.asp
+    }
+
+    .introParagraph h2 {
+      margin-top: 35px;
+      padding: 0 20px 20px 20px;
+      font-size: 24px;
+      font-family: Helvetica, sans-serif;
+      color: #223F20;
+      text-align: center;
+    }
+
+    .introParagraph  {
+      margin-top: 35px;
+      margin-left: 5px;
+      position: float;
+      width: 25%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center;
+      padding-right: 20px;
+    }
+
+    .photosInOlympia {
+      margin-top: 35px;
+      margin-left: 60px;
+      position: float;
+      width: 30%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center;
+    }
+
+    .photosInOlympia .sidePhotos {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .sidePhotos img {
+      border: 5px solid white;
+      box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24), 0 8px 8px 0 rgba(0,0,0,0.19);
+      I got this box-shadow hover and transition hover from: https://www.w3schools.com/css/css3_buttons.asp
+    }
+    .sidePhotos p {
+      text-align: center;
+      margin-top: -5px;
+    }
+
+    .mainContentContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 97%;
+      margin-top: 25px;
+      margin-left: 25px;
+      justify-content: space-evenly;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      /* I got this box-shadow hover and transition hover from: https://www.w3schools.com/css/css3_buttons.asp */
+    }
+
+    .olympiaInfo {
+      margin-top: 35px;
+      position: float;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center;
+      background-color: white;
+      border: 4px solid #7AC277;
+    }
+    
+    .olympiaInfo h2 {
+      font-size: 24px;
+      font-family: Helvetica, sans-serif;
+      color: #223F20;
+
+    }
+    .olympiaInfo li {
+      font-size: 20px;
+      font-family: Helvetica, sans-serif;
+      color: #223F20;
+    }
+
+    .olympiaInfo a {
+      text-decoration: underline dotted;
+      color: #223F20;
+    }
+
+    .sources {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 97%;
+      margin-top: 25px;
+      margin-left: 25px;
+      justify-content: space-evenly;
+      padding-bottom: 100px;
+      padding-top: 50px;
+    }
+
+    .sourcesContent {
+      padding: 25px;
+      width: 95%;
+      height: 100%;
+      border: 4px solid black;
+      background-color: white;
+      font-size: 18px;
+      font-family: Helvetica, sans-serif;
+      color: black;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      /* I got this box-shadow hover and transition hover from: https://www.w3schools.com/css/css3_buttons.asp */
+    }
+ 
+  .sourcesContent h2 {
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  .sourcesContent a {
+    color: black;
+  }
+
