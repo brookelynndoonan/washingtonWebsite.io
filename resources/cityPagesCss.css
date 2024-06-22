@@ -8,7 +8,7 @@ body {
   margin: 0;
 }
 
-/* DESKTOP NAV */
+/* Navigation */
 nav {
       /* background-image: linear-gradient(to bottom right, #30663B , #6DA81D); */
       height: 90px;
@@ -260,8 +260,16 @@ nav {
       justify-content: center;
     }
 
+    #creditToOlympicPhoto {
+      font-size: 16px;
+    }
+
+    #creditToFieldPhoto {
+      font-size: 16px;
+    }
+    
     .introParagraph .introPhoto {
-      margin-left: 10px;
+      margin-left: 20px;
       position: float;
       width: 100%;
       height: 50%;
@@ -286,6 +294,8 @@ nav {
       color: #223F20;
       text-align: center;
     }
+
+
 
     .introParagraph  {
       margin-top: 35px;
@@ -328,6 +338,9 @@ nav {
       margin-top: -5px;
     }
 
+
+
+    /* Main Content */
     .mainContentContainer {
       display: flex;
       align-items: center;
@@ -371,6 +384,7 @@ nav {
       color: #223F20;
     }
 
+    /* Sources */
     .sources {
       display: flex;
       align-items: center;
