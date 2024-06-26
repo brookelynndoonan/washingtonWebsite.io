@@ -9,47 +9,66 @@
 
     <nav>
         <div class="navbar">
-            <img src="resources/pngs/—Pngtree—apple red fruit commercial element_4037323.png" alt="apple logo" class="apple-logo">
+            <img src="resources/pngs/Png apple.png" alt="apple logo" class="apple-logo">
             <ul>
-                <li><a href="home.html"><button class="navButton">Home</button></a></li>
+                <li><a href="index.html"><button class="navButton">Home</button></a></li>
                 <li><a href="statecapital.html"><button class="navButton">State Capital</button></a></li>
                 <li><a href="cities.html"><button class="navButton">Cities</button></a></li>
-                <li><a href="externalLinks.html"><button class="navButton">External Links</button></a></li>
-            </ul>
         </div>
     </nav>
-    <div class="linksToCities">
-        <div class="containerToCityLinks">
-            <p><a href="statecapital.html" class="href">State Capital Of Washington  <inline><-- Click Here!</inline></a></p>
-            <p><a href="seattlePage.html" class="href">Seattle, Washington  <inline><-- Click Here!</inline></a></p>
-            <p><a href="yakimaPage.html" class="href">Yakima, Washington  <inline><-- Click Here!</inline></a></p>
-        </div>
-    </div>
 
-    <div class="formForSuggestions">
+    <header>
+      <div class="citiesHeader">
+        <h1>Cities In Washington State</h1>
+        <h2>Here, you can access information for other cities here in Washington. 
+          Below, you will also find a suggestion box to let us know what other cities you would like to see information
+          about.
+        </h2>
+      </div>
+    </header>
+    <main>
+      <aside class="linksToCities">
+        <div class="containerToCityLinks">
+          <p><a href="statecapital.html" class="href">State Capital Of Washington  <inline><-- Click Here!</inline></a></p>
+          <p><a href="seattlePage.html" class="href">Seattle, Washington  <inline><-- Click Here!</inline></a></p>
+          <p><a href="yakimaPage.html" class="href">Yakima, Washington  <inline><-- Click Here!</inline></a></p>
+      </div>
+      </aside>
+      <section>
         <p>Please, leave a suggestion!!</p>
-    </div>
-    <div class="form">
-        <form id="suggestionForm" action="#" method="POST">
-            <p>
-              <label for="first">Enter First Name:</label>
-              <input type="text" name="first" id="first" placeholder="Hank">
-            </p>
-            <p>
-              <label for="last">Enter Last Name:</label>
-              <input type="text" name="last" id="last" placeholder="Hill">
-            </p>
-            <p>
-              <label for="email">Email:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</label>
-              <input type="text" name="email" id="email" placeholder="Enter Your Email">
-            </p>
-            <p>
-              <label for="confirmEmail">Confirm Email:&#160;&#160;&#160;</label>
-              <input type="text" name="confirmEmail" id="confirmEmail" placeholder="Confirm Your Email">
-            </p>
-            <input type="submit" id="submit">
-          </form>
-    </div>
-    <script type="text/javascript" src="javascript.js"></script>
+      <div class="form">
+          <form id="suggestionForm" action="cities.html/suggestions" method="POST">
+              <p>
+                <label for="first">Enter First Name:</label>
+                <input type="text" name="first" id="first" placeholder="Hank">
+              </p>
+              <p>
+                <label for="last">Enter Last Name:</label>
+                <input type="text" name="last" id="last" placeholder="Hill">
+              </p>
+              <p>
+                <label for="email">Email:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</label>
+                <input type="text" name="email" id="email" placeholder="Enter Your Email">
+              </p>
+              <p>
+                <label for="confirmEmail">Confirm Email:&#160;&#160;&#160;</label>
+                <input type="text" name="confirmEmail" id="confirmEmail" placeholder="Confirm Your Email">
+              </p>
+              <p>
+                <label for="suggestions">Suggestions:</label>
+                <textarea id="suggestions" name="suggestions" placeholder="Please leave your City suggestions here!" rows="8" cols="40"></textarea>
+             </p>
+              <input type="submit" id="submit">
+            </form>
+      </div>
+      <script type="text/javascript" src="javascript.js"></script>
+      </section>
+    </main>
+    <footer class="sources">
+      <div class="sourcesContent">
+        <p>Sources</p>
+          <p><a href='https://pngtree.com/freepng/apple-red-fruit-commercial-element_4037323.html'>Apple logo in nav png image from pngtree.com/</a></p>
+      </div>
+  </footer>
 </body>
 </html>

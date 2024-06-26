@@ -6,6 +6,7 @@
 
 body {
   margin: 0;
+  position: absolute;
 }
 
 /* Navigation */
@@ -91,22 +92,56 @@ nav {
       font-size: 32px;
     }
 
+    header {
+     
+      width: 98%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-left: 20px;
+    }
+
+    .citiesHeader {
+      padding: 20px 45px 20px 50px;
+      border: 2px solid black;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      background-color: rgba(255,255,255,0.4);
+      margin-top: 35px;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      /* I got this box-shadow hover and transition hover from: https://www.w3schools.com/css/css3_buttons.asp */
+    }
+
+    /* Aside and Form */
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 97%;
+    margin-top: 25px;
+    margin-left: 25px;
+    justify-content: space-evenly;
+  }
+
   .linksToCities {
-    position: float;
-    margin: 60px 30px 35px 0;
-    width: 100%;
+    margin-top: 35px;
+    width: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center; 
     justify-content: center;
-    position: relative;
   }
 
   .containerToCityLinks {
-    padding: 25px;
-    width: 95%;
+    padding-left: 50px;
+    width: 100%;
     height: 100%;
+    padding-bottom: 400px;
     border: 4px solid black;
     background-color: white;
     font-size: 18px;
@@ -127,9 +162,8 @@ nav {
     color: red;
   }
 
-  .formForSuggestions p {
-    margin-left: 650px;
-    position: absolute;
+  section p {
+    margin-left: 10px;
     font-size: 20px;
     color: #194A29;
   }
@@ -145,3 +179,51 @@ nav {
     justify-content: center;
     position: relative;
   }
+
+  section {
+    margin-top: 35px;
+      margin-right: 60px;
+      position: float;
+      width: 70%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center;
+  }
+
+      /* Sources */
+      .sources {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 97%;
+        margin-top: 25px;
+        margin-left: 25px;
+        justify-content: space-evenly;
+        padding-bottom: 100px;
+        padding-top: 50px;
+      }
+  
+      .sourcesContent {
+        padding: 25px;
+        width: 95%;
+        height: 100%;
+        border: 4px solid black;
+        background-color: white;
+        font-size: 18px;
+        font-family: Helvetica, sans-serif;
+        color: black;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        /* I got this box-shadow hover and transition hover from: https://www.w3schools.com/css/css3_buttons.asp */
+      }
+   
+    .sourcesContent h2 {
+      text-align: center;
+      font-size: 25px;
+    }
+    
+    .sourcesContent a {
+      color: black;
+    }
